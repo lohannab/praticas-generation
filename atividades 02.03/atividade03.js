@@ -24,4 +24,4 @@ numeroDeHorasExtras = leia.questionInt("Digite o número de horas extras: ");
 descontos = leia.questionFloat("Digite o valor dos descontos: ");
 
 salarioLiquido = salarioBruto + adicionalNoturno + horasExtras *numeroDeHorasExtras - descontos;
-console.log("O salário líquido é: " + salarioLiquido.toFixed(2));
+console.log("O salário líquido é: " + salarioLiquido.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
